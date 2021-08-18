@@ -103,4 +103,14 @@ class MainActivity : AppCompatActivity() {
 
 //INTERFACES---------------------------------------------------------------------
 
-private fun misInterfaces(){}
+private fun misInterfaces(){
+    /*
+    creamos una variable de tipo persona
+    donde crearemos un gamer.
+    despues acedemos a los metodos de la interfas
+     */
+
+    val gamer = Persona("Mario",23)
+    gamer.play()
+    gamer.stream()
+}
