@@ -5,7 +5,9 @@ que se puede heredar de esta clase
 de no ponerlo, no se podra heredar
  */
 
-open class Persona(open val nombre:String, edad:Int):Trabajo (){
+// la clase persona hereda de trabajo, e implementa Game
+
+open class Persona(open val nombre:String, edad:Int):Trabajo() ,Game{
 
    open fun trabajo(){// open, para poder sobreescribir la funcion
 
@@ -15,4 +17,13 @@ open class Persona(open val nombre:String, edad:Int):Trabajo (){
     override fun irTrabajo() {
         println(nombre+" va al trabajo")
     }
+
+    //Game interface
+     override val game:String
+        get() ="Among Us"
+
+    override fun play() {
+        println("Esta persona esta jugando a $game")
+    }
+
 }
