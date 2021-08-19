@@ -27,3 +27,7 @@ open class Persona(open val nombre:String, edad:Int):Trabajo() ,Game{
     }
 
 }
+
+/*
+actualizacion git 25/08/21
+ */
